@@ -1,0 +1,78 @@
+.Med-loc{
+    min-width: 100vw;
+    height: 200px;
+    /* padding-left: 50px; */
+    /* box-sizing: border-box; */
+    /* border: 2px solid black; */
+    background-color: whitesmoke;
+    margin-top: 60px;
+}
+.Med-loc-head{
+    font-size: larger;
+    padding: 25px 50px 0px;
+    font-weight: 600;
+}
+.NearbyMeds{
+    height: 150px;
+    /* background-color: white; */
+    /* margin: auto; */
+    display: flex;
+    /* gap: 50px; */
+    justify-content: center;
+    align-items: center;
+}
+.MedStore{
+    width: 250px;
+    height: 90px;
+    border: 0.3px solid grey;
+    margin: auto 15px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 40px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Name{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(72, 72, 72);
+    grid-column: 1/4;
+    align-self: flex-start;
+}
+.Status{
+    color: green;
+    font-weight: bold;
+    font-size: small;
+    grid-column: 4/6;
+    justify-self: center;
+}
+.Address{
+    grid-column: 1/4;
+}
+.Distance{
+    grid-column: 4/5;
+}
+.Ratting{
+    grid-column: 5/6;
+    display: flex;
+}
+.SeeMore{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    border-radius: 50%;
+    position: relative;
+    right: 25px;
+    background-color: white;
+}
+.Star{
+    width: 17px;
+    height: 17px;
+    margin-top: 1px;
+    margin-right: 3px;
+}
