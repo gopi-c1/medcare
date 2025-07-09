@@ -2,7 +2,7 @@ import React from 'react'
 import './SubNavbar.css'
 
 const SubNavbar = () => {
-  return (
+  return ( 
     <div className='SubNavbar'>
       <ul className='SubNav-list'>
         <li><a href="/AllMedicinesPage">Order Medicine</a></li>
