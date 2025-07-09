@@ -20,12 +20,13 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}  # Must be a valid, multi-line OpenSSH private key
           script: |
-            cd ~/sevenpills/medfrontend
+            cd ~/sevenpills/medfrontend  # or the actual path on your EC2
             git pull origin main
             npm install
             npm run build
-            pm2 delete myapp || true
-            pm2 start npx --name myapp -- serve -s dist
+            pm2 delete frontend || true  # delete old app if exists
+            pm2 start npx --name frontend -- serve -s dist -l 3000
+
 
 
 
