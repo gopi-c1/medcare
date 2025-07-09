@@ -20,12 +20,10 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}  # Must be a valid, multi-line OpenSSH private key
           script: |
-            cd ~/medfrontend
-            git pull origin main
-            git log -1
-            npm install
-            npm run build
-            echo "Listing dist folder:"
-            ls -al dist/
-            npx pm2 restart myapp
+              cd ~/sevenpills/medfrontend
+              git pull origin main
+              npm install
+              npm run build
+              npx pm2 restart myapp
+
 
