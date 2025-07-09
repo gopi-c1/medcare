@@ -12,7 +12,7 @@ const SubNavbar = () => {
         <li><a href='/DoctorAppointmentsPage'>Doctor Consultation</a></li>
         <li><a href="/Labs">Labs</a></li>
         <li><a href="/BloodPage">Blood Bank</a></li>
-        <li><a href="/DietPlan">Diet Plan</a></li>
+        <li><a href="/DietPlan">Diet Plan</a></li>  
       </ul>
     </div>
   )
