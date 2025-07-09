@@ -22,6 +22,10 @@ jobs:
           script: |
             cd ~/medfrontend
             git pull origin main
+            git log -1
             npm install
             npm run build
+            echo "Listing dist folder:"
+            ls -al dist/
             npx pm2 restart myapp
+
